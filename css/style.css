@@ -1,0 +1,124 @@
+:root {
+  --main-color:#9579f7;
+  --converter-color:#e5dbff;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contaner {
+  background-color: var(--main-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contaner .currncy-converter {
+  max-width: 383px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 29px;
+}
+
+.contaner .currncy-converter .intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+.contaner .currncy-converter .intro img {
+  width: 50%;
+}
+
+.contaner .currncy-converter .intro h1 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contaner .currncy-converter form .money {
+  display: flex;
+  flex-direction: column;
+}
+
+.contaner .currncy-converter form .money label {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.contaner .currncy-converter form .money input[type="number"] {
+  border: 0px;
+  outline: 0;
+  border-bottom: 2px solid black;
+  padding: 6px;
+  margin-bottom: 28px;
+  width: 100%;
+}
+
+.contaner .currncy-converter form .money input[type="number"]:focus {
+  border-color: var(--main-color);
+  color: var(--main-color);
+}
+
+.contaner .currncy-converter form .fromTo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 28px;
+}
+
+.contaner .currncy-converter form .fromTo select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 50%;
+  padding: 10px;
+  color: white;
+  border: 0px;
+  outline: 0px;
+  background-image: url(../img/arrow-down.svg);
+  background-size: 20px 20px;
+  background-position: right 15px top 50%;
+  background-repeat: no-repeat;
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+
+.contaner .currncy-converter form .fromTo select option {
+  border-radius: 0px;
+  background-color: #ffffff;
+  color: #02002c;
+}
+
+.contaner .currncy-converter form button {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background-color: var(--main-color);
+  border: 0px;
+  cursor: pointer;
+  margin-bottom: 28px;
+}
+
+.contaner .currncy-converter .converter {
+  background-color: var(--converter-color);
+  text-align: center;
+  padding: 10px;
+  color: white;
+  display: none;
+}
